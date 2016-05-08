@@ -6,6 +6,9 @@ import {
   View,
   StyleSheet
 } from 'react-native';
+import DayItem from './src/day-item';
+
+const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 // Crear un componente de react
 
@@ -15,6 +18,7 @@ const Weekdays = React.createClass({
       <Text>
         Días de las semana:
       </Text>
+      <DayItem />
     </View>
   }
 });
