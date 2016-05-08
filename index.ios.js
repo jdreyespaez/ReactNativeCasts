@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 import DayItem from './src/day-item';
 
-const DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
 // Crear un componente de react
 const Weekdays = React.createClass({
@@ -19,9 +18,16 @@ const Weekdays = React.createClass({
     </View>
   },
   days: function() {
-    return DAYS.map(function(day){
-      return <DayItem day={day} />
-    });
+    var daysItems = [];
+
+    for(var i = 0; i < 7; i++){
+      var day = Moment().add(i, 'days').format('dddd');
+      daysItems.push(
+        <DayItem day={day} daysUntil={i} />
+      )
+    }
+
+    return daysItems
   }
 });
 
