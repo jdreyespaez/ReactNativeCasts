@@ -17,11 +17,13 @@ const Weekdays = React.createClass({
       <Text>
         Días de las semana:
       </Text>
-      <DayItem day={DAYS[0]} />
+      {this.days()}
     </View>
   },
   days: function() {
-    
+    return DAYS.map(function(day){
+      return <DayItem day={day} />
+    });
   }
 });
 
