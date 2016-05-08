@@ -3,18 +3,29 @@ import React from 'react';
 import {
   AppRegistry,
   Text,
-  View
+  View,
+  StyleSheet
 } from 'react-native';
 
 // Crear un componente de react
 
-var Weekdays = React.createClass({
+const Weekdays = React.createClass({
   render: function() {
-    return <View>
+    return <View style={styles.container}>
       <Text>
         Días de las semana:
       </Text>
     </View>
+  }
+});
+
+// Estilar el componente de React
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });
 
