@@ -1,5 +1,6 @@
 // Importar el código que necesitamos
 import React from 'react';
+import Moment from 'moment';
 import {
   AppRegistry,
   Text,
@@ -8,15 +9,12 @@ import {
 } from 'react-native';
 import DayItem from './src/day-item';
 
-const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
 // Crear un componente de react
 const Weekdays = React.createClass({
   render: function() {
     return <View style={styles.container}>
-      <Text>
-        Días de las semana:
-      </Text>
       {this.days()}
     </View>
   },
