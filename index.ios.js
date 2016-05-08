@@ -1,6 +1,10 @@
 // Importar el código que necesitamos
 import React from 'react';
-import AppRegistry from React.AppRegistry;
+import {
+  AppRegistry,
+  Text,
+  View
+} from 'react-native';
 
 // Crear un componente de react
 
