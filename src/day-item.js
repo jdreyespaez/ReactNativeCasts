@@ -1,13 +1,13 @@
 import React from 'React';
 import {
-  Text,
-  StyleSheet
+  StyleSheet,
+  Text
 } from 'react-native';
 
 const DayItem = React.createClass({
   render: function() {
     return <Text style={styles.day}>
-      Un día de la semana
+    {this.props.day}
     </Text>
   }
 });
