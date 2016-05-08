@@ -19,6 +19,9 @@ const Weekdays = React.createClass({
       </Text>
       <DayItem day={DAYS[0]} />
     </View>
+  },
+  days: function() {
+    
   }
 });
 
